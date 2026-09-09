@@ -16,7 +16,7 @@ export const PillarsSection: React.FC<PillarsSectionProps> = ({ onNavigate, onOp
       title: 'IA Autônoma & Aurora',
       subtitle: 'A inteligência ativa da Pluppex e do S.P.Y CRM',
       description: 'Agentes de IA especializados que atuam como SDRs rápidos (< 1 min), analisam tom e intenção no WhatsApp e realizam follow-up autônomo para resgatar vendas adormecidas.',
-      image: '/src/assets/images/outline_ai_icon_1788984498178.jpg',
+      image: '/images/outline_ai_icon_1788984498178.jpg',
       alt: 'Ícone futurista outline de Inteligência Artificial Pluppex',
       points: [
         'SDR IA com resposta imediata 24/7',
@@ -32,7 +32,7 @@ export const PillarsSection: React.FC<PillarsSectionProps> = ({ onNavigate, onOp
       title: 'Business Intelligence & Dados',
       subtitle: 'Conexão real entre tráfego pago e saldo no caixa',
       description: 'Acabamos com decisões baseadas em palpites ou planilhas desatualizadas. Cruzamos dados de Meta/Google Ads, pipeline do CRM e faturamento líquido em tempo real.',
-      image: '/src/assets/images/outline_data_icon_1788984508514.jpg',
+      image: '/images/outline_data_icon_1788984508514.jpg',
       alt: 'Ícone futurista outline de Análise de Dados e BI Pluppex',
       points: [
         'Rastreamento ponta a ponta com UTMs limpas',
@@ -48,7 +48,7 @@ export const PillarsSection: React.FC<PillarsSectionProps> = ({ onNavigate, onOp
       title: 'S.P.Y — O CRM da Pluppex',
       subtitle: 'O centro nervoso da sua operação comercial',
       description: 'O CRM projetado especificamente para a metodologia da máquina de receita. Pipelines claros, distribuição inteligente por SLAs e histórico completo de mensagens.',
-      image: '/src/assets/images/outline_crm_icon_1788984517441.jpg',
+      image: '/images/outline_crm_icon_1788984517441.jpg',
       alt: 'Ícone futurista outline do S.P.Y CRM Pluppex',
       points: [
         'Gestão visual de etapas com SLAs rígidos',
@@ -64,7 +64,7 @@ export const PillarsSection: React.FC<PillarsSectionProps> = ({ onNavigate, onOp
       title: 'Automação & Workflows',
       subtitle: 'Eliminação definitiva de tarefas manuais repetitivas',
       description: 'Conectores robustos e fluxos contínuos entre canais de atração, WhatsApp, gateways de pagamento e sistemas legados. Sua equipe focada apenas em negociar e fechar.',
-      image: '/src/assets/images/outline_automation_icon_1788984528985.jpg',
+      image: '/images/outline_automation_icon_1788984528985.jpg',
       alt: 'Ícone futurista outline de Automação Comercial Pluppex',
       points: [
         'Roteamento instantâneo via WhatsApp Comercial',

@@ -7,19 +7,20 @@ import { FoundersSection } from '../components/FoundersSection';
 import { PillarsSection } from '../components/PillarsSection';
 import { FaqSection } from '../components/FaqSection';
 import { StatsCounterBar } from '../components/StatsCounterBar';
+import { ManifestoSection } from '../components/ManifestoSection';
 import { motion } from 'framer-motion';
 import { WORK_MODEL_STEPS, PRODUCTS_ECOSYSTEM, MANIFESTO_TEXT } from '../data/siteData';
-import { 
-  ArrowRight, 
-  CheckCircle2, 
-  Cpu, 
-  Activity, 
-  TrendingUp, 
-  ShieldCheck, 
-  Zap, 
-  Eye, 
-  Sparkles, 
-  Layers, 
+import {
+  ArrowRight,
+  CheckCircle2,
+  Cpu,
+  Activity,
+  TrendingUp,
+  ShieldCheck,
+  Zap,
+  Eye,
+  Sparkles,
+  Layers,
   ChevronRight,
   Database,
   LineChart,
@@ -40,67 +41,83 @@ export const HomePage: React.FC<HomePageProps> = ({
   return (
     <div className="space-y-24">
       {/* 16. HERO DO SITE */}
-      <section id="hero-section" className="relative min-h-[90vh] flex items-center justify-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
-        {/* Background visual accents */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute top-1/3 left-10 w-96 h-96 bg-violet-600/10 rounded-full blur-[100px] pointer-events-none" />
+      <section id="hero-section" className="pt-28 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="relative p-8 sm:p-14 lg:p-16 rounded-3xl bg-gradient-to-b from-[#180933] via-[#0e0520] to-[#070212] border border-purple-500/35 shadow-2xl overflow-hidden text-center">
+          {/* Background visual accents */}
+          <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none" />
+          <div className="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none" />
 
-        <div className="relative z-10 text-center max-w-4xl mx-auto">
-          {/* Tagline Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#150a2b] border border-purple-500/40 text-purple-200 text-xs font-mono-tech tracking-wide mb-6 shadow-[0_0_20px_rgba(168,85,247,0.15)]">
-            <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
-            <span>PERFORMANCE & LUCRO COM CRESCIMENTO EXPONENCIAL</span>
-          </div>
-
-          {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-extrabold text-white tracking-tight leading-[1.08] uppercase">
-            CONSTRUÍMOS E OPERAMOS A MÁQUINA DE RECEITA DA SUA EMPRESA.
-          </h1>
-
-          {/* Subheadline */}
-          <p className="mt-6 text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            Conectamos tráfego pago, tecnologia, CRM, agentes e inteligência artificial para gerar mais oportunidades e transformar oportunidades em clientes, vendas e receita.
-          </p>
-
-          {/* Primary & Secondary CTAs */}
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              id="hero-cta-build-machine"
-              onClick={onOpenDiagnostic}
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-[#070312] font-display font-black text-sm uppercase tracking-wider hover:bg-purple-100 transition-all shadow-xl shadow-purple-500/25 flex items-center justify-center gap-2.5 group"
-            >
-              <Zap className="w-4 h-4 text-purple-700 fill-purple-700" />
-              <span>CONSTRUIR MINHA MÁQUINA</span>
-              <ArrowRight className="w-4 h-4 text-purple-700 group-hover:translate-x-1 transition-transform" />
-            </button>
-
-            <a
-              href="#maquina-de-receita"
-              id="hero-cta-how-it-works"
-              className="w-full sm:w-auto px-7 py-4 rounded-xl bg-[#120824] hover:bg-[#1b0d36] text-slate-200 hover:text-white border border-purple-900/60 hover:border-purple-400 transition-all text-xs font-mono-tech uppercase font-semibold flex items-center justify-center gap-2"
-            >
-              <span>VER COMO FUNCIONA</span>
-              <ChevronRight className="w-4 h-4 text-purple-400" />
-            </a>
-          </div>
-
-          {/* Machine Pillars Strip */}
-          <div className="mt-14 pt-8 border-t border-purple-950 grid grid-cols-2 sm:grid-cols-4 gap-3 text-left">
-            <div className="p-3.5 rounded-xl bg-[#0d061c] border border-purple-950 hover:border-purple-800/50 transition-colors">
-              <span className="text-[10px] font-mono-tech text-slate-400 uppercase block tracking-wider mb-0.5">Demanda Ativa</span>
-              <span className="text-xs sm:text-sm font-display font-bold text-white">Meta + Google Ads</span>
+          <div className="relative z-10 max-w-4xl mx-auto">
+            {/* Pulsing Live Status Badge */}
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-purple-950/90 border border-purple-500/40 text-purple-200 text-xs font-mono-tech tracking-wide mb-6 shadow-lg shadow-purple-950/50">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+              </span>
+              <span className="font-semibold text-white">MÁQUINA DE RECEITA PLUPPEX</span>
+              <span className="text-slate-400">•</span>
+              <span className="text-cyan-300">Operação Ativa no S.P.Y CRM</span>
             </div>
-            <div className="p-3.5 rounded-xl bg-[#0d061c] border border-purple-950 hover:border-purple-800/50 transition-colors">
-              <span className="text-[10px] font-mono-tech text-slate-400 uppercase block tracking-wider mb-0.5">Estrutura Comercial</span>
-              <span className="text-xs sm:text-sm font-display font-bold text-white">S.P.Y CRM + Pipelines</span>
+
+            {/* Main Headline */}
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-white tracking-tight leading-[1.06] uppercase">
+              Construímos e Operamos a <br className="hidden sm:inline" />
+              <span className="bg-gradient-to-r from-purple-300 via-fuchsia-300 to-cyan-300 bg-clip-text text-transparent">
+                Máquina de Receita da Sua Empresa.
+              </span>
+            </h1>
+
+            {/* Subheadline */}
+            <p className="mt-6 text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed font-light">
+              Conectamos tráfego pago, tecnologia proprietária, CRM sob medida, automações e inteligência artificial para gerar mais oportunidades e transformar conversas em contratos fechados no caixa.
+            </p>
+
+            {/* Primary & Secondary CTAs */}
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button
+                id="hero-cta-build-machine"
+                onClick={onOpenDiagnostic}
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white text-[#080312] font-display font-black text-xs uppercase tracking-wider hover:bg-purple-100 transition-all shadow-xl shadow-purple-500/30 flex items-center justify-center gap-2.5 group"
+              >
+                <Zap className="w-4 h-4 text-purple-700 fill-purple-700" />
+                <span>CONSTRUIR MINHA MÁQUINA</span>
+                <ArrowRight className="w-4 h-4 text-purple-700 group-hover:translate-x-1 transition-transform" />
+              </button>
+
+              <a
+                href="#maquina-de-receita"
+                id="hero-cta-how-it-works"
+                className="w-full sm:w-auto px-7 py-4 rounded-xl bg-[#130728] hover:bg-[#1c0c38] text-slate-200 hover:text-white border border-purple-900/60 hover:border-purple-400/80 transition-all text-xs font-mono-tech uppercase font-semibold flex items-center justify-center gap-2"
+              >
+                <Activity className="w-4 h-4 text-cyan-400" />
+                <span>VER O LOOP DA MÁQUINA</span>
+                <ChevronRight className="w-4 h-4 text-purple-400" />
+              </a>
             </div>
-            <div className="p-3.5 rounded-xl bg-[#0d061c] border border-purple-950 hover:border-purple-800/50 transition-colors">
-              <span className="text-[10px] font-mono-tech text-slate-400 uppercase block tracking-wider mb-0.5">Inteligência Artificial</span>
-              <span className="text-xs sm:text-sm font-display font-bold text-white">Aurora IA + Agentes SDR</span>
-            </div>
-            <div className="p-3.5 rounded-xl bg-[#0d061c] border border-purple-950 hover:border-purple-800/50 transition-colors">
-              <span className="text-[10px] font-mono-tech text-slate-400 uppercase block tracking-wider mb-0.5">Tecnologia & Dados</span>
-              <span className="text-xs sm:text-sm font-display font-bold text-purple-300">BI & RevOps Integrados</span>
+
+            {/* Machine Telemetry Pillars Strip */}
+            <div className="mt-12 pt-6 border-t border-purple-900/50 grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+              <div className="p-3.5 rounded-xl bg-[#0e0620]/90 border border-purple-900/40">
+                <span className="text-[10px] font-mono-tech text-slate-400 uppercase block tracking-wider mb-0.5">Demanda Ativa</span>
+                <span className="text-xs sm:text-sm font-display font-bold text-white">Meta + Google Ads</span>
+                <span className="text-[10px] text-slate-400 block mt-0.5">Canais proprietários</span>
+              </div>
+              <div className="p-3.5 rounded-xl bg-[#0e0620]/90 border border-purple-900/40">
+                <span className="text-[10px] font-mono-tech text-slate-400 uppercase block tracking-wider mb-0.5">Estrutura Comercial</span>
+                <span className="text-xs sm:text-sm font-display font-bold text-purple-300">S.P.Y CRM + SLAs</span>
+                <span className="text-[10px] text-slate-400 block mt-0.5">Zero leads perdidos</span>
+              </div>
+              <div className="p-3.5 rounded-xl bg-[#0e0620]/90 border border-purple-900/40">
+                <span className="text-[10px] font-mono-tech text-slate-400 uppercase block tracking-wider mb-0.5">Inteligência Artificial</span>
+                <span className="text-xs sm:text-sm font-display font-bold text-cyan-300">Aurora IA 24/7</span>
+                <span className="text-[10px] text-slate-400 block mt-0.5">Resposta em &lt; 45s</span>
+              </div>
+              <div className="p-3.5 rounded-xl bg-[#0e0620]/90 border border-purple-900/40">
+                <span className="text-[10px] font-mono-tech text-slate-400 uppercase block tracking-wider mb-0.5">Governança de Caixa</span>
+                <span className="text-xs sm:text-sm font-display font-bold text-emerald-400">RevOps Integrado</span>
+                <span className="text-[10px] text-slate-400 block mt-0.5">Visão do Ad ao Caixa</span>
+              </div>
             </div>
           </div>
         </div>
@@ -442,25 +459,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       <FaqSection onOpenDiagnostic={onOpenDiagnostic} />
 
       {/* 14. MANIFESTO */}
-      <section id="manifesto-pluppex" className="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
-        <div className="p-8 sm:p-12 rounded-3xl bg-[#0c0618] border border-purple-900/50 shadow-2xl relative">
-          <span className="text-xs font-mono-tech tracking-widest uppercase text-purple-300 font-semibold mb-6 inline-block">
-            MANIFESTO OFICIAL
-          </span>
-
-          <div className="space-y-4 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-            {MANIFESTO_TEXT.paragraphs.map((p, idx) => (
-              <p key={idx}>{p}</p>
-            ))}
-          </div>
-
-          <div className="mt-8 pt-6 border-t border-purple-950">
-            <p className="text-3xl sm:text-4xl font-display font-black text-white uppercase tracking-tight">
-              {MANIFESTO_TEXT.conclusion}
-            </p>
-          </div>
-        </div>
-      </section>
+      <ManifestoSection onOpenDiagnostic={onOpenDiagnostic} />
 
       {/* 18. CTA DE DIAGNÓSTICO FINAL */}
       <section id="cta-final-diagnostico" className="pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">

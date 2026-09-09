@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDiagnostic }) 
           {/* Brand & Manifesto snippet */}
           <div className="lg:col-span-2 space-y-4">
             <div className="cursor-pointer" onClick={() => handleNav('home')}>
-              <PluppexLogo variant="full" theme="white-purple" showTagline={true} size="lg" />
+              <PluppexLogo variant="full" theme="white-purple" size="lg" />
             </div>
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm pt-2">
