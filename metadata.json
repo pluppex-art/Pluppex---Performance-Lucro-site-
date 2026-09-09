@@ -1,0 +1,6 @@
+{
+  "name": "Pluppex — Máquina de Receita & Performance",
+  "description": "Site oficial da Pluppex. Construímos e operamos a máquina de receita da sua empresa. Performance & Lucro com Crescimento Exponencial. Vender é ciência, não sorte.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
