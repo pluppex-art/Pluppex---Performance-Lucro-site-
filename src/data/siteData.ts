@@ -170,7 +170,7 @@ export const PRODUCTS_ECOSYSTEM: ProductItem[] = [
     ],
     quote: 'Não compramos cliques. Construímos canais de aquisição capazes de gerar oportunidades.',
     icon: 'Target',
-    iconImage: '/src/assets/images/outline_data_icon_1788984508514.jpg',
+    iconImage: '/images/outline_data_icon_1788984508514.jpg',
     ctaText: 'Acelerar Demanda'
   },
   {
@@ -190,7 +190,7 @@ export const PRODUCTS_ECOSYSTEM: ProductItem[] = [
     ],
     quote: 'A tecnologia existe para tornar a operação mais rápida, inteligente e escalável.',
     icon: 'Terminal',
-    iconImage: '/src/assets/images/outline_automation_icon_1788984528985.jpg',
+    iconImage: '/images/outline_automation_icon_1788984528985.jpg',
     ctaText: 'Estruturar Tecnologia'
   },
   {
@@ -210,7 +210,7 @@ export const PRODUCTS_ECOSYSTEM: ProductItem[] = [
     ],
     quote: 'O S.P.Y é o CRM que a sua operação precisava para nunca mais deixar dinheiro na mesa.',
     icon: 'KanbanSquare',
-    iconImage: '/src/assets/images/outline_crm_icon_1788984517441.jpg',
+    iconImage: '/images/outline_crm_icon_1788984517441.jpg',
     ctaText: 'Conhecer o S.P.Y CRM'
   },
   {
@@ -230,7 +230,7 @@ export const PRODUCTS_ECOSYSTEM: ProductItem[] = [
     ],
     quote: 'A inteligência artificial que transforma conversas e dados em receita fechada.',
     icon: 'Sparkles',
-    iconImage: '/src/assets/images/outline_ai_icon_1788984498178.jpg',
+    iconImage: '/images/outline_ai_icon_1788984498178.jpg',
     ctaText: 'Conhecer a Aurora IA'
   },
   {

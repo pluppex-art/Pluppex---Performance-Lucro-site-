@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => handleNavClick('home')}
             className="flex items-center text-left group focus:outline-none transition-transform hover:scale-[1.01]"
           >
-            <PluppexLogo variant="full" theme="white-purple" showTagline={true} size="md" />
+            <PluppexLogo variant="full" theme="white-purple" size="md" />
           </button>
 
           {/* Desktop Minimalist Navigation */}

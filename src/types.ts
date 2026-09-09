@@ -1,11 +1,11 @@
-export type PageType = 
-  | 'home' 
-  | 'solutions' 
-  | 'technology' 
-  | 'spy' 
-  | 'aurora' 
-  | 'cases' 
-  | 'about' 
+export type PageType =
+  | 'home'
+  | 'solutions'
+  | 'technology'
+  | 'spy'
+  | 'aurora'
+  | 'cases'
+  | 'about'
   | 'diagnostic';
 
 export interface MachineStage {
@@ -27,6 +27,9 @@ export interface ProblemItem {
 }
 
 export interface ProductItem {
+  strategicDelivery: any;
+  techStack: any;
+  pillars: any;
   id: string;
   code: string;
   title: string;
