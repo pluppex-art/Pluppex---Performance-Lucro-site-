@@ -78,7 +78,7 @@ export const Header: React.FC<HeaderProps> = ({
                   onClick={() => handleNavClick(item.id)}
                   className={`relative px-3.5 py-1.5 text-xs font-medium rounded-full transition-all ${
                     isActive
-                      ? 'text-black bg-[#18BFFF]'
+                      ? 'text-white bg-[#A855F7]'
                       : 'text-white/70 hover:text-white hover:bg-white/10'
                   }`}
                 >
@@ -93,7 +93,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               id="cta-quick-diagnostic-btn"
               onClick={onOpenDiagnostic}
-              className="group relative inline-flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-lg bg-[#18BFFF] text-black hover:bg-[#3fcaff] transition-all tracking-wide uppercase"
+              className="group relative inline-flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-lg bg-[#A855F7] text-white hover:bg-[#C084FC] transition-all tracking-wide uppercase"
             >
               <span>{CTA_LABEL}</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
@@ -129,7 +129,7 @@ export const Header: React.FC<HeaderProps> = ({
                 onClick={() => handleNavClick(item.id)}
                 className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                   isActive
-                    ? 'bg-[#18BFFF] text-black'
+                    ? 'bg-[#A855F7] text-white'
                     : 'text-white/70 hover:bg-white/10 hover:text-white'
                 }`}
               >
@@ -146,7 +146,7 @@ export const Header: React.FC<HeaderProps> = ({
                 setMobileMenuOpen(false);
                 onOpenDiagnostic();
               }}
-              className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-[#18BFFF] text-black hover:bg-[#3fcaff] font-bold text-xs tracking-wide uppercase"
+              className="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-[#A855F7] text-white hover:bg-[#C084FC] font-bold text-xs tracking-wide uppercase"
             >
               <span>{CTA_LABEL}</span>
             </button>

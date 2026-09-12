@@ -11,11 +11,11 @@ export const WhatsAppWidget: React.FC<WhatsAppWidgetProps> = ({ onOpenDiagnostic
       <button
         id="btn-floating-whatsapp"
         onClick={onOpenDiagnostic}
-        className="group flex items-center justify-center w-14 h-14 rounded-full bg-black border border-white/15 text-white hover:border-[#18BFFF] transition-all"
+        className="group flex items-center justify-center w-14 h-14 rounded-full bg-black border border-white/15 text-white hover:border-[#A855F7] transition-all"
         aria-label="Diagnosticar minha operação"
         title="Diagnosticar minha operação"
       >
-        <MessageSquare className="w-5 h-5 group-hover:text-[#18BFFF] transition-colors" />
+        <MessageSquare className="w-5 h-5 group-hover:text-[#A855F7] transition-colors" />
       </button>
     </div>
   );

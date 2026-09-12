@@ -8,7 +8,7 @@ export const HowToStartSection: React.FC = () => {
     <section id="como-comecar" className="py-20 md:py-28 border-t border-white/10">
       <Container>
         <div className="max-w-2xl mb-14">
-          <span className="eyebrow text-[#18BFFF] block mb-4">{HOW_TO_START_EYEBROW}</span>
+          <span className="eyebrow text-[#A855F7] block mb-4">{HOW_TO_START_EYEBROW}</span>
           <h2 className="text-white">{HOW_TO_START_HEADLINE}</h2>
         </div>
 

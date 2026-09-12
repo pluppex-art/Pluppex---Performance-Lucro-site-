@@ -29,7 +29,7 @@ export const MachineSection: React.FC = () => {
     <section id="maquina" className="py-20 md:py-28 border-t border-white/10">
       <Container>
         <div className="max-w-2xl mb-14">
-          <span className="eyebrow text-[#18BFFF] block mb-4">{MACHINE_EYEBROW}</span>
+          <span className="eyebrow text-[#A855F7] block mb-4">{MACHINE_EYEBROW}</span>
           <h2 className="text-white">{MACHINE_HEADLINE}</h2>
           <p className="mt-4 text-white/60" style={{ fontSize: 'var(--text-body)' }}>
             {MACHINE_SUBHEADLINE}
@@ -60,7 +60,7 @@ export const MachineSection: React.FC = () => {
                 {tab.label}
               </span>
               <span className={`mt-3 block h-[2px] w-full transition-colors ${
-                activeTab === tab.id ? 'bg-[#18BFFF]' : 'bg-white/10'
+                activeTab === tab.id ? 'bg-[#A855F7]' : 'bg-white/10'
               } ${activeTab === tab.id ? 'flow-line' : ''}`} />
             </button>
           ))}

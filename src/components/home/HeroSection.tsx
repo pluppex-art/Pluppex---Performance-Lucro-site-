@@ -27,7 +27,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDiagnostic }) =>
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="eyebrow text-[#18BFFF] block mb-6"
+            className="eyebrow text-[#A855F7] block mb-6"
           >
             {HERO_EYEBROW}
           </motion.span>
@@ -62,7 +62,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenDiagnostic }) =>
             <button
               id="hero-cta-diagnostic"
               onClick={onOpenDiagnostic}
-              className="group inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-[#18BFFF] text-black font-bold text-sm uppercase tracking-wider hover:bg-[#3fcaff] transition-colors"
+              className="group inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-[#A855F7] text-white font-bold text-sm uppercase tracking-wider hover:bg-[#C084FC] transition-colors"
             >
               <span>{CTA_LABEL}</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

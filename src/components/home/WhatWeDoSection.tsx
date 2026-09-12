@@ -32,7 +32,7 @@ export const WhatWeDoSection: React.FC = () => {
                 </p>
               </motion.div>
               {idx < HOME_PILLARS.length - 1 && (
-                <div className="hidden md:flex items-center px-2 text-[#18BFFF]/60">
+                <div className="hidden md:flex items-center px-2 text-[#A855F7]/60">
                   <ArrowRight className="w-5 h-5" />
                 </div>
               )}

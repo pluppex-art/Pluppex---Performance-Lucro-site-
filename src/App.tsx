@@ -34,7 +34,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-[#F5F5F5] relative selection:bg-[#18BFFF]/35 selection:text-white">
+    <div className="min-h-screen bg-[#050505] text-[#F5F5F5] relative selection:bg-[#A855F7]/35 selection:text-white">
       {/* Main Header */}
       <Header
         currentPage={currentPage}

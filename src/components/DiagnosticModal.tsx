@@ -124,7 +124,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
               <h3 className="font-bold text-white text-base">
                 Diagnóstico de Máquina de Receita
               </h3>
-              <p className="text-[11px] font-mono-tech text-[#18BFFF]">
+              <p className="text-[11px] font-mono-tech text-[#A855F7]">
                 Identifique onde sua empresa está perdendo vendas
               </p>
             </div>
@@ -144,7 +144,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
           {!submitted ? (
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-xs text-white/70">
-                <span className="font-bold text-[#18BFFF] block mb-1">
+                <span className="font-bold text-[#A855F7] block mb-1">
                   Onde sua empresa está perdendo receita?
                 </span>
                 Talvez o problema não seja falta de clientes. Talvez seja a forma como sua empresa gera, acompanha e converte oportunidades.
@@ -162,7 +162,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                     placeholder="Seu nome"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#A855F7] focus:outline-none"
                   />
                 </div>
 
@@ -176,7 +176,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                     placeholder="Sua empresa"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#A855F7] focus:outline-none"
                   />
                 </div>
 
@@ -190,7 +190,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                     placeholder="(11) 99999-9999"
                     value={formData.whatsapp}
                     onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#A855F7] focus:outline-none"
                   />
                 </div>
 
@@ -204,7 +204,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                     placeholder="seu@empresa.com.br"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#A855F7] focus:outline-none"
                   />
                 </div>
 
@@ -217,7 +217,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                     placeholder="Ex: SaaS B2B, Indústria, Serviços, etc."
                     value={formData.segment}
                     onChange={(e) => setFormData({ ...formData, segment: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#A855F7] focus:outline-none"
                   />
                 </div>
 
@@ -230,7 +230,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                     placeholder="Ex: São Paulo / SP"
                     value={formData.city}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#A855F7] focus:outline-none"
                   />
                 </div>
               </div>
@@ -244,7 +244,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                   <select
                     value={formData.revenueRange}
                     onChange={(e) => setFormData({ ...formData, revenueRange: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs focus:border-[#A855F7] focus:outline-none"
                   >
                     {revenueOptions.map((opt) => (
                       <option key={opt} value={opt}>{opt}</option>
@@ -259,7 +259,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                   <select
                     value={formData.salesRepsCount}
                     onChange={(e) => setFormData({ ...formData, salesRepsCount: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs focus:border-[#A855F7] focus:outline-none"
                   >
                     {salesRepsOptions.map((opt) => (
                       <option key={opt} value={opt}>{opt}</option>
@@ -274,7 +274,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                   <select
                     value={formData.marketingInvestment}
                     onChange={(e) => setFormData({ ...formData, marketingInvestment: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs focus:border-[#A855F7] focus:outline-none"
                   >
                     {marketingOptions.map((opt) => (
                       <option key={opt} value={opt}>{opt}</option>
@@ -296,7 +296,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                       onClick={() => setFormData({ ...formData, biggestLeak: opt })}
                       className={`p-2.5 rounded-lg text-xs font-mono-tech transition-all border text-center ${
                         formData.biggestLeak === opt
-                          ? 'bg-[#18BFFF] border-[#18BFFF] text-black font-bold'
+                          ? 'bg-[#A855F7] border-[#A855F7] text-white font-bold'
                           : 'bg-white/5 border-white/10 text-white/60 hover:text-white hover:border-white/30'
                       }`}
                     >
@@ -317,7 +317,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                     placeholder="Ex: Vendedores esquecem follow-up, leads caros..."
                     value={formData.mainChallenge}
                     onChange={(e) => setFormData({ ...formData, mainChallenge: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#A855F7] focus:outline-none"
                   />
                 </div>
 
@@ -330,7 +330,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                     placeholder="Ex: Dobrar receita com previsibilidade sem inchar equipe"
                     value={formData.mainGoal}
                     onChange={(e) => setFormData({ ...formData, mainGoal: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#18BFFF] focus:outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 text-sm focus:border-[#A855F7] focus:outline-none"
                   />
                 </div>
               </div>
@@ -341,7 +341,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                   type="submit"
                   disabled={isSubmitting}
                   id="btn-submit-revenue-machine"
-                  className="w-full py-4 rounded-xl bg-[#18BFFF] text-black hover:bg-[#3fcaff] font-black text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2"
+                  className="w-full py-4 rounded-xl bg-[#A855F7] text-white hover:bg-[#C084FC] font-black text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2"
                 >
                   <Cpu className="w-4 h-4" />
                   <span>{isSubmitting ? 'Processando Diagnóstico...' : 'ENVIAR DIAGNÓSTICO'}</span>
@@ -352,12 +352,12 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
           ) : (
             /* Success State with Instant Assessment Output */
             <div className="text-center py-6 space-y-6">
-              <div className="w-16 h-16 rounded-full bg-[#18BFFF]/15 border border-[#18BFFF]/40 text-[#18BFFF] flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 rounded-full bg-[#A855F7]/15 border border-[#A855F7]/40 text-[#A855F7] flex items-center justify-center mx-auto">
                 <CheckCircle2 className="w-8 h-8" />
               </div>
 
               <div>
-                <span className="text-xs font-mono-tech text-[#18BFFF] uppercase font-semibold">
+                <span className="text-xs font-mono-tech text-[#A855F7] uppercase font-semibold">
                   Diagnóstico Preliminar Gerado
                 </span>
                 <h4 className="text-2xl font-bold text-white mt-1">
@@ -380,7 +380,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                 </div>
                 <div className="p-3 rounded-lg bg-white/5 border border-white/10">
                   <span className="text-white/50 block text-[10px] uppercase">Próximo Passo</span>
-                  <span className="text-[#18BFFF] font-bold">Conversa com a Pluppex</span>
+                  <span className="text-[#A855F7] font-bold">Conversa com a Pluppex</span>
                 </div>
               </div>
 
@@ -388,7 +388,7 @@ export const DiagnosticModal: React.FC<DiagnosticModalProps> = ({
                 <button
                   id="btn-whatsapp-diagnostic-send"
                   onClick={handleOpenWhatsApp}
-                  className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#18BFFF] hover:bg-[#3fcaff] text-black font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#A855F7] hover:bg-[#C084FC] text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2"
                 >
                   <MessageSquare className="w-4 h-4" />
                   <span>Continuar no WhatsApp</span>

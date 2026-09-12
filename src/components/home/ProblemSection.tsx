@@ -8,7 +8,7 @@ export const ProblemSection: React.FC = () => {
     <section id="problema" className="py-20 md:py-28 border-t border-white/10">
       <Container>
         <div className="max-w-2xl mb-14">
-          <span className="eyebrow text-[#18BFFF] block mb-4">{PROBLEM_EYEBROW}</span>
+          <span className="eyebrow text-[#A855F7] block mb-4">{PROBLEM_EYEBROW}</span>
           <h2 className="text-white">{PROBLEM_HEADLINE}</h2>
           <p className="mt-2 text-white/60" style={{ fontSize: 'var(--text-h3)', fontWeight: 700 }}>
             {PROBLEM_SUBHEADLINE}
@@ -36,7 +36,7 @@ export const ProblemSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-[#18BFFF]"
+          className="text-[#A855F7]"
         >
           {PROBLEM_CLOSING_LINE}
         </motion.h2>

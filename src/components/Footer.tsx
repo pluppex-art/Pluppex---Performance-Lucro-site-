@@ -43,7 +43,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDiagnostic }) 
             <ul className="space-y-2 text-xs font-mono-tech">
               {navItems.map((item) => (
                 <li key={item.id}>
-                  <button onClick={() => handleNav(item.id)} className="hover:text-[#18BFFF] transition-colors">
+                  <button onClick={() => handleNav(item.id)} className="hover:text-[#A855F7] transition-colors">
                     {item.label}
                   </button>
                 </li>
@@ -64,7 +64,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDiagnostic }) 
             <button
               id="footer-diagnostic-cta"
               onClick={onOpenDiagnostic}
-              className="w-full py-3 px-3 rounded-lg bg-[#18BFFF] text-black hover:bg-[#3fcaff] font-bold text-xs uppercase tracking-wider transition-all text-center flex items-center justify-center gap-1.5"
+              className="w-full py-3 px-3 rounded-lg bg-[#A855F7] text-white hover:bg-[#C084FC] font-bold text-xs uppercase tracking-wider transition-all text-center flex items-center justify-center gap-1.5"
             >
               <span>{CTA_LABEL}</span>
               <ArrowRight className="w-3.5 h-3.5" />

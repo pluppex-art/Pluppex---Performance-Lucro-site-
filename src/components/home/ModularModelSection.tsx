@@ -30,7 +30,7 @@ export const ModularModelSection: React.FC = () => {
           ))}
         </div>
 
-        <p className="mt-10 text-[#18BFFF] font-bold uppercase tracking-wide text-sm sm:text-base">
+        <p className="mt-10 text-[#A855F7] font-bold uppercase tracking-wide text-sm sm:text-base">
           {MODULAR_CLOSING_LINE}
         </p>
       </Container>

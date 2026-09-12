@@ -20,7 +20,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ onOpenDiagnost
           <button
             id="final-cta-diagnostic"
             onClick={onOpenDiagnostic}
-            className="group mt-9 inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-[#18BFFF] text-black font-bold text-sm uppercase tracking-wider hover:bg-[#3fcaff] transition-colors"
+            className="group mt-9 inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-[#A855F7] text-white font-bold text-sm uppercase tracking-wider hover:bg-[#C084FC] transition-colors"
           >
             <span>{CTA_LABEL}</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

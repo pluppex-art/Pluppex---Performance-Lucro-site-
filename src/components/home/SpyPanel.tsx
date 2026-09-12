@@ -15,7 +15,7 @@ const KANBAN_COLUMNS = [
 export const SpyPanel: React.FC<SpyPanelProps> = ({ tab }) => {
   return (
     <div>
-      <span className="eyebrow text-[#18BFFF] block mb-3">{tab.eyebrow}</span>
+      <span className="eyebrow text-[#A855F7] block mb-3">{tab.eyebrow}</span>
       <h3 className="text-white max-w-lg">{tab.headline}</h3>
 
       <div className="mt-8 flex flex-wrap gap-2.5">
@@ -45,7 +45,7 @@ export const SpyPanel: React.FC<SpyPanelProps> = ({ tab }) => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: colIdx * 0.1 + i * 0.06 }}
                   className={`h-6 sm:h-7 rounded-md ${
-                    colIdx === 2 && i === 0 ? 'bg-[#18BFFF]/30 border border-[#18BFFF]/50' : 'bg-white/[0.06] border border-white/10'
+                    colIdx === 2 && i === 0 ? 'bg-[#A855F7]/30 border border-[#A855F7]/50' : 'bg-white/[0.06] border border-white/10'
                   }`}
                 />
               ))}

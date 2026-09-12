@@ -8,7 +8,7 @@ interface MachineTabPanelProps {
 export const MachineTabPanel: React.FC<MachineTabPanelProps> = ({ tab }) => {
   return (
     <div>
-      <span className="eyebrow text-[#18BFFF] block mb-3">{tab.eyebrow}</span>
+      <span className="eyebrow text-[#A855F7] block mb-3">{tab.eyebrow}</span>
       <h3 className="text-white max-w-lg">{tab.headline}</h3>
 
       <div className="mt-8 flex flex-wrap gap-2.5">
