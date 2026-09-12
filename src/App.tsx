@@ -34,11 +34,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#07040d] text-slate-100 relative selection:bg-purple-600/35 selection:text-white">
-      {/* Background High-Tech Grid & Lighting */}
-      <div className="fixed inset-0 bg-grid-pattern opacity-50 pointer-events-none z-0" />
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] bg-radial-gradient pointer-events-none z-0" />
-
+    <div className="min-h-screen bg-[#050505] text-[#F5F5F5] relative selection:bg-[#18BFFF]/35 selection:text-white">
       {/* Main Header */}
       <Header
         currentPage={currentPage}

@@ -2,7 +2,7 @@ import React from 'react';
 
 interface PluppexLogoProps {
   variant?: 'full' | 'wordmark' | 'icon' | 'badge';
-  theme?: 'white' | 'dark' | 'white-purple';
+  theme?: 'white' | 'dark';
   className?: string;
   size?: 'sm' | 'md' | 'lg' | 'xl';
   useOriginalPhoto?: boolean;
@@ -10,12 +10,12 @@ interface PluppexLogoProps {
 
 export const PluppexLogo: React.FC<PluppexLogoProps> = ({
   variant = 'full',
-  theme = 'white-purple',
+  theme = 'white',
   className = '',
   size = 'md',
   useOriginalPhoto = false,
 }) => {
-  // Sizing definitions for the logo image - increased for high visibility & impact
+  // Sizing definitions for the logo image
   const sizeMap = {
     sm: {
       full: 'h-11 sm:h-12',
@@ -37,27 +37,27 @@ export const PluppexLogo: React.FC<PluppexLogoProps> = ({
 
   const currentSize = sizeMap[size] || sizeMap.md;
 
-  // Icon-only variant (The dynamic rocket X from the user photo)
+  // Icon-only variant (the movement symbol)
   if (variant === 'icon') {
     return (
-      <div 
+      <div
         id="pluppex-brand-icon"
         className={`relative inline-flex items-center justify-center shrink-0 ${className}`}
       >
         <img
           src="/pluppex-icon-transparent.png"
-          alt="Pluppex Rocket Icon"
-          className={`${currentSize.icon} object-contain filter drop-shadow-[0_0_12px_rgba(168,85,247,0.4)] transition-transform duration-300 hover:scale-105`}
+          alt="Símbolo Pluppex"
+          className={`${currentSize.icon} object-contain transition-transform duration-300 hover:scale-105`}
           loading="eager"
         />
       </div>
     );
   }
 
-  // Determine which image source to use based on theme and options
+  // Determine which image source to use:
   // - useOriginalPhoto: displays the exact original uploaded photo as-is
-  // - theme 'dark' (on light backgrounds): uses transparent with dark text
-  // - theme 'white' or 'white-purple' (on dark backgrounds): uses transparent with white text for maximum legibility and sleek look
+  // - theme 'white' (on dark/black backgrounds, the default institutional theme): white wordmark
+  // - theme 'dark' (on light backgrounds): dark wordmark
   let imgSrc = '/pluppex-logo-dark-theme.png';
   if (useOriginalPhoto) {
     imgSrc = '/pluppex-logo.png';
@@ -66,11 +66,11 @@ export const PluppexLogo: React.FC<PluppexLogoProps> = ({
   }
 
   return (
-    <div className={`relative inline-flex items-center select-none group ${className}`}>
+    <div className={`relative inline-flex items-center select-none ${className}`}>
       <img
         src={imgSrc}
         alt="Pluppex - Performance & Lucro com Crescimento Exponencial"
-        className={`${currentSize.full} w-auto object-contain filter drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)] transition-all duration-300 group-hover:drop-shadow-[0_4px_20px_rgba(168,85,247,0.35)]`}
+        className={`${currentSize.full} w-auto object-contain`}
         loading="eager"
       />
     </div>

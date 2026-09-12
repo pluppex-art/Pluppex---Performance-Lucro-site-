@@ -76,3 +76,49 @@ export interface CaseItem {
   impactDescription: string;
   tags: string[];
 }
+
+export interface HomePillar {
+  id: string;
+  number: string;
+  label: 'GERAR' | 'CONVERTER' | 'ESCALAR';
+  description: string;
+}
+
+export type MachineTabId = 'aquisicao' | 'spy' | 'aurora' | 'operacao';
+
+export interface MachineTab {
+  id: MachineTabId;
+  label: string;
+  eyebrow: string;
+  headline: string;
+  items: string[];
+  resultLine: string;
+}
+
+export interface AuroraSignal {
+  id: string;
+  label: string;
+}
+
+export interface ProblemDisconnect {
+  id: string;
+  actor: string;
+  statement: string;
+}
+
+export interface AudienceQualifier {
+  id: string;
+  statement: string;
+}
+
+export interface ModularComponent {
+  id: string;
+  name: 'Performance' | 'SPY' | 'Aurora' | 'Tech' | 'Automação' | 'RevOps';
+  description: string;
+}
+
+export interface HowToStartStep {
+  number: string;
+  title: string;
+  description: string;
+}

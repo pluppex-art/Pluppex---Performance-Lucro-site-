@@ -1,61 +1,118 @@
 @import "tailwindcss";
 
+@theme {
+  --color-ink: #050505;
+  --color-ink-soft: #0d0d0d;
+  --color-ink-line: rgba(245, 245, 245, 0.12);
+  --color-paper: #F5F5F5;
+  --color-paper-muted: rgba(245, 245, 245, 0.64);
+  --color-paper-faint: rgba(245, 245, 245, 0.08);
+  --color-signal: #18BFFF;
+  --color-signal-ink: #050505;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --text-h1: clamp(2.5rem, 2rem + 2.4vw, 5rem);
+  --text-h2: clamp(2rem, 1.6rem + 1.6vw, 3.25rem);
+  --text-h3: clamp(1.375rem, 1.25rem + 0.5vw, 1.75rem);
+  --text-body: clamp(1.0625rem, 1rem + 0.2vw, 1.1875rem);
+  --text-micro: 0.75rem;
+
+  --container-max: 1320px;
+}
+
 @layer base {
   * {
-    border-color: #271b3d;
+    border-color: var(--color-ink-line);
   }
-  
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #07040d;
-    color: #e2e8f0;
+    font-family: var(--font-sans);
+    background-color: var(--color-ink);
+    color: var(--color-paper);
     overflow-x: hidden;
   }
 
   h1, h2, h3, h4, .font-display {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: var(--font-sans);
     letter-spacing: -0.02em;
   }
 
   .font-mono-tech {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font-sans);
+    letter-spacing: 0.08em;
+  }
+
+  h1 { font-size: var(--text-h1); font-weight: 800; line-height: 1.04; }
+  h2 { font-size: var(--text-h2); font-weight: 800; line-height: 1.08; }
+  h3 { font-size: var(--text-h3); font-weight: 700; line-height: 1.2; }
+
+  ::selection {
+    background-color: rgba(24, 191, 255, 0.35);
+    color: var(--color-paper);
   }
 }
 
-/* Minimalist purple grid and lighting */
-.bg-grid-pattern {
-  background-size: 48px 48px;
-  background-image: 
-    linear-gradient(to right, rgba(168, 85, 247, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(168, 85, 247, 0.04) 1px, transparent 1px);
+.container-pluppex {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: 20px;
 }
 
-.bg-radial-gradient {
-  background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.16) 0%, rgba(7, 4, 13, 0) 72%);
+@media (min-width: 640px) {
+  .container-pluppex {
+    padding-inline: 24px;
+  }
 }
 
-.tech-border-card {
-  background: linear-gradient(180deg, rgba(18, 10, 32, 0.85) 0%, rgba(11, 6, 20, 0.95) 100%);
-  border: 1px solid rgba(139, 92, 246, 0.22);
-  backdrop-filter: blur(12px);
+@media (min-width: 1024px) {
+  .container-pluppex {
+    padding-inline: 32px;
+  }
 }
 
-.tech-border-card:hover {
-  border-color: rgba(192, 132, 252, 0.45);
+.eyebrow {
+  font-size: var(--text-micro);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
-/* Custom scrollbar in sleek purple */
+.flow-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.flow-line::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, var(--color-signal), transparent);
+  transform: translateX(-100%);
+  animation: flow-move 2.4s ease-in-out infinite;
+}
+
+@keyframes flow-move {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Custom scrollbar in black/white */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #07040d;
+  background: var(--color-ink);
 }
 ::-webkit-scrollbar-thumb {
-  background: #2e1a4f;
+  background: rgba(245, 245, 245, 0.18);
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #5b21b6;
+  background: var(--color-signal);
 }
